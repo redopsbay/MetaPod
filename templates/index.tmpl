@@ -1,0 +1,50 @@
+<DOCTYPE HTML>
+<html>
+<head>
+<title>Pod Metadata</title>
+<script type="text/javascript" src="/static/index.js">
+</script>
+ <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+<section>
+  <h1>Pod Metadata</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Pod Namespace</th>
+          <th>Pod IP Address</th>
+          <th>Node Name</th>
+          <th>Pod Name</th>
+          <th>Cpu Request</th>
+		  <th>Cpu Limit</th>
+		  <th>Memory Request</th>
+		  <th>Memory Limit</th>
+		  <th>ServiceAccount</th>
+		  <th>Cluster Name</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td>{{ .Namespace }}</td>
+		  <td>{{ .PodIp }}</td>
+		  <td>{{ .NodeName }}</td>
+		  <td>{{ .PodName }}</td>
+		  <td>{{ .CpuReq }}</td>
+		  <td>{{ .CpuLimit }}</td>
+		  <td>{{ .MemReq }}</td>
+		  <td>{{ .MemLimit }}</td>
+		  <td>{{ .ServiceAccount }}</td>
+		  <td>{{ .ClusterName }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</body>
+</html>
