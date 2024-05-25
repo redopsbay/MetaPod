@@ -1,5 +1,5 @@
 FILE = main.go
-image_name = alfredvalderrama/metapod:v1
+image_name = redopsbay/metapod:v1
 
 start:
 	export POD_NAMESPACE="prod"

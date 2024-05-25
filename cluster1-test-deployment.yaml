@@ -78,7 +78,7 @@ spec:
         version: v1
     spec:
       containers:
-      - image: docker.io/alfredvalderrama/metapod:v1
+      - image: docker.io/redopsbay/metapod:latest
         imagePullPolicy: IfNotPresent
         name: metapod
         ports:
